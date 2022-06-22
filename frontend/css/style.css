@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navigasi {
+    color: #fff;
+    background-color: #0390fc;
+    padding: 1px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+.search {
+    text-align: center;
+}
+
+.set-search {
+    width: 250px;
+    height: 20px;  
+    outline: none; 
+}
+
+.btn-custom {
+    color: #fff;
+    background-color: #138f3a;
+    border: #138f3a;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+}
+
+.btn-custom:hover {
+    background-color: #207534;
+}
