@@ -2,6 +2,7 @@ package main
 
 import (
 	"log" // log package is used to log messages
+	database "mengkodingkan/notes/src/database"
 	route "mengkodingkan/notes/src/routes"
 	util "mengkodingkan/notes/src/utils"
 
@@ -20,13 +21,9 @@ func _init() *gin.Engine {
 
 	r.Use(cors.Default())
 
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "pong",
-		})
-	})
+	db := database.Connection()
 
-	route.InitNotesRoutes(r)
+	route.InitNotesRoutes(db, r)
 
 	return r
 }
