@@ -26,6 +26,12 @@ body {
     border-radius: 10px;
 }
 
+h3 {
+    color: #fff;
+    font-weight: lighter;
+    text-align: center;
+}
+
 form {
     text-align: center;
 }

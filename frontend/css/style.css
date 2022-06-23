@@ -18,6 +18,10 @@ body {
     top: 0;
 }
 
+h3 {
+    font-weight: lighter;
+}
+
 .content {
     margin-top: 100px;
 }
@@ -114,6 +118,7 @@ th {
     background-color: #0390fc;
     border: #0390fc;
     color: #fff;
+    font-weight: lighter;
 }
 
 .table, th, td {
