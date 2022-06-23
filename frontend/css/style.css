@@ -57,6 +57,7 @@ body {
     border-radius: 8px;
     margin-bottom: 2px;
     outline: none;
+    color: #272c33;
 }
 
 .btn-custom2:hover {
@@ -118,6 +119,10 @@ th {
 .table, th, td {
     border: 1px solid #3440eb;
     padding: 8px 20px;
+}
+
+.table td {
+    color: #0362fc;
 }
 
 .pagination {
