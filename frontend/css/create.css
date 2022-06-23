@@ -20,9 +20,14 @@ body {
 
 .content {
     margin: 100px auto;
-    width: 400px;
-    padding: 10px;
-    
+    width: 500px;
+    padding: 20px;
+    background-color: #0390fc;
+    border-radius: 10px;
+}
+
+form {
+    text-align: center;
 }
 
 
@@ -46,8 +51,9 @@ form textarea {
 
 label {
     display: block;
-    color: #0390fc;
-    
+    color: #fff;
+    text-align: left;
+    padding-left: 7%;
 }
 
 a {
@@ -56,11 +62,11 @@ a {
 }
 
 .btn-custom1 {
-    background-color: #0362fc;
-    color: #fff;   
+    background-color: #fff;
+    color: #0390fc;   
     width: 70px;
     height: 30px;
-    border: #0362fc;
+    border: #fff;
     border-radius: 8px;
     line-height: 30px;
     text-align: center;
@@ -69,15 +75,15 @@ a {
 }
 
 .btn-custom1:hover {
-    background-color: #034afc;
+    font-size: 15px;
 }
 
 .btn-custom2 {
-    background-color: #e02b3d;
-    color: #fff;
+    background-color: #fff;
+    color: #e02b3d;
     width: 70px;
     height: 30px;
-    border: #e02b3d;
+    border: #fff;
     border-radius: 8px;
     line-height: 30px;
     text-align: center;
@@ -86,5 +92,5 @@ a {
 }
 
 .btn-custom2:hover {
-    background-color: #cf2334;
+    font-size: 15px;
 }
