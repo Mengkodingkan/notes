@@ -28,7 +28,7 @@ body {
     outline: none; 
 }
 
-.btn-custom {
+.btn-custom1 {
     color: #fff;
     background-color: #138f3a;
     border: #138f3a;
@@ -37,24 +37,81 @@ body {
     border-radius: 8px;
 }
 
-.btn-custom:hover {
+.btn-custom1:hover {
     background-color: #207534;
 }
 
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    border-collapse: separate;
-    border-spacing: 10px;
+.btn-custom2 {
+    background-color: #ebc934;
+    border: #ebc934;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    margin-bottom: 2px;
+}
+
+.btn-custom2:hover {
+    background-color: #d6b522;
+}
+
+.btn-custom3 {
+    color: #fff;
+    background-color: #e02b3d;
+    border: #e02b3d;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+}
+
+.btn-custom3:hover {
+    background-color: #c72031;
+}
+
+.btn-custom4 {
+    color: #fff;
+    background-color: #3462eb;
+    border: #3462eb;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.btn-custom4:hover {
+    background-color: #2052c7;
+}
+.table-content {
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 16%;
+    padding-right: 16%;
 }
 
-th{
-    background-color: #E0E0E0;
+.table {
+    border-collapse: collapse;
 }
 
-td{
-    text-align: center;
+th {
+    background-color: #0390fc;
+    border: #0390fc;
+    color: #fff;
+}
+
+.table, th, td {
+    border: 1px solid #3440eb;
+    padding: 8px 20px;
+}
+
+.pagination {
+    margin-top: 15px;
+}
+
+.pagination a {
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+.pagination a.active {
+    background-color: #0000ff;
+    color: #fff;
 }
