@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f2f4f5;
 }
 
 * {
@@ -16,15 +17,24 @@ body {
     width: 100%;
     position: fixed;
     top: 0;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
 }
 
 h3 {
     font-weight: lighter;
 }
 
-.content {
-    margin-top: 100px;
+main {
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    width: 900px;
+    height: 450px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
+
+
 
 .search {
     text-align: center;
@@ -108,7 +118,7 @@ a {
     background-color: #034afc;
 }
 .table-content {
-    margin: 5px auto;
+    margin: auto;
     width: 850px;
     padding: 10px;
 }
@@ -165,4 +175,11 @@ th {
 .pagination a:hover:not(.active) {
     background-color: #a1d6ff;
     color: #fff;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    background-color: #0390fc;
+    padding: 2px;
 }
