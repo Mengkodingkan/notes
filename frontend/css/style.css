@@ -4,6 +4,10 @@ body {
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .navigation {
     color: #fff;
     background-color: #0390fc;
@@ -24,7 +28,7 @@ body {
 
 .set-search {
     width: 250px;
-    height: 20px;  
+    height: 25px;  
     outline: none; 
 }
 
@@ -69,16 +73,24 @@ body {
 
 .btn-custom4 {
     color: #fff;
-    background-color: #3462eb;
-    border: #3462eb;
+    background-color: #0000ff;
+    border: #0000ff;
     height: 30px;
     width: 70px;
     border-radius: 8px;
     margin-top: 15px;
+    line-height: 30px;
+    text-align: center;
+}
+
+span a {
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
 }
 
 .btn-custom4:hover {
-    background-color: #2052c7;
+    background-color: #2831de;
 }
 .table-content {
     margin-top: 20px;
