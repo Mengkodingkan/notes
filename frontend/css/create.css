@@ -31,15 +31,22 @@ form input {
     height: 25px;
     outline: none;
     margin-bottom: 1rem;
+    border:2px solid #0390fc;
+    border-radius: 4px;
+    color: #0390fc;
 }
 
 form textarea {
     width: 400px;
     outline: none;
+    border: 2px solid #0390fc;
+    border-radius: 4px;
+    color: #0390fc;
 }
 
 label {
     display: block;
+    color: #0390fc;
     
 }
 
@@ -49,33 +56,35 @@ a {
 }
 
 .btn-custom1 {
-    background-color: #0000ff;
+    background-color: #0362fc;
     color: #fff;   
     width: 70px;
     height: 30px;
-    border: #0000ff;
+    border: #0362fc;
     border-radius: 8px;
     line-height: 30px;
     text-align: center;
     font-size: 14px; 
+    outline: none;
 }
 
 .btn-custom1:hover {
-    background-color: #2831de;
+    background-color: #034afc;
 }
 
 .btn-custom2 {
-    background-color: #f03a40;
+    background-color: #e02b3d;
     color: #fff;
     width: 70px;
     height: 30px;
-    border: #f03a40;
+    border: #e02b3d;
     border-radius: 8px;
     line-height: 30px;
     text-align: center;
     font-size: 14px;
+    outline: none;
 }
 
 .btn-custom2:hover {
-    background-color: #e03a45;
+    background-color: #cf2334;
 }

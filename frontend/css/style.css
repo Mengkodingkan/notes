@@ -30,6 +30,9 @@ body {
     width: 250px;
     height: 25px;  
     outline: none; 
+    border: 2px solid #0390fc;
+    border-radius: 4px;
+    color: #0390fc;
 }
 
 .btn-custom1 {
@@ -39,6 +42,7 @@ body {
     height: 30px;
     width: 70px;
     border-radius: 8px;
+    outline: none;
 }
 
 .btn-custom1:hover {
@@ -52,6 +56,7 @@ body {
     width: 70px;
     border-radius: 8px;
     margin-bottom: 2px;
+    outline: none;
 }
 
 .btn-custom2:hover {
@@ -65,22 +70,24 @@ body {
     height: 30px;
     width: 70px;
     border-radius: 8px;
+    outline: none;
 }
 
 .btn-custom3:hover {
-    background-color: #c72031;
+    background-color: #cf2334;
 }
 
 .btn-custom4 {
     color: #fff;
-    background-color: #0000ff;
-    border: #0000ff;
+    background-color: #0362fc;
+    border: #0362fc;
     height: 30px;
     width: 70px;
     border-radius: 8px;
     margin-top: 15px;
     line-height: 30px;
     text-align: center;
+    outline: none;
 }
 
 span a {
@@ -90,12 +97,12 @@ span a {
 }
 
 .btn-custom4:hover {
-    background-color: #2831de;
+    background-color: #034afc;
 }
 .table-content {
-    margin-top: 20px;
-    padding-left: 16%;
-    padding-right: 16%;
+    margin: 20px auto;
+    width: 850px;
+    padding: 10px;
 }
 
 .table {
@@ -121,9 +128,11 @@ th {
     text-decoration: none;
     margin-right: 10px;
     padding: 5px 10px;
+    outline: none;
+    color: #0362fc;
 }
 
 .pagination a.active {
-    background-color: #0000ff;
+    background-color: #0362fc;
     color: #fff;
 }
