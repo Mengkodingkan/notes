@@ -102,7 +102,7 @@ main {
     height: 30px;
     width: 70px;
     border-radius: 8px;
-    margin-top: 15px;
+    margin-bottom: 10px;
     line-height: 30px;
     text-align: center;
     outline: none;
@@ -182,4 +182,7 @@ footer {
     color: #fff;
     background-color: #0390fc;
     padding: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
