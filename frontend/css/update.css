@@ -41,12 +41,12 @@ form {
 
 form input {
     width: 400px;
-    height: 25px;
+    height: 27px;
     outline: none;
     margin-bottom: 1rem;
     border:2px solid #0390fc;
-    border-radius: 4px;
-    color: #0390fc;
+    border-radius: 8px;
+    color: #444;
 }
 
 form textarea {
@@ -54,7 +54,7 @@ form textarea {
     outline: none;
     border: 2px solid #0390fc;
     border-radius: 4px;
-    color: #0390fc;
+    color: #444;
 }
 
 label {
@@ -108,4 +108,7 @@ footer {
     color: #fff;
     background-color: #0390fc;
     padding: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

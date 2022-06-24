@@ -1,3 +1,3 @@
 function onClick() {
-    confirm('Are you sure ?')
+    confirm('Are you sure ?');
 }
