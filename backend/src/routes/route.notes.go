@@ -1,32 +1,80 @@
 package route
 
 import (
-	model "mengkodingkan/notes/src/models"
+	"fmt"
 
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
+
+	note "mengkodingkan/notes/src/controllers"
+	model "mengkodingkan/notes/src/database/models"
 )
 
 func InitNotesRoutes(db *gorm.DB, route *gin.Engine) {
 	/*
+		Controllers
+	*/
+	note := note.NewRepository(db)
+	/*
 		Group Route
 	*/
-
 	group := route.Group("/api/v1")
-
 	group.GET("/notes", func(c *gin.Context) {
-		var users []model.Note
+		notes, err := note.GetAllNotes()
 
-		datas := db.Find(&users)
-		if datas.Error == nil {
-			c.JSON(200, gin.H{
-				"status": "success",
-				"data":   users,
+		if err == "404_NOT_FOUND" {
+			c.JSON(404, gin.H{
+				"message": "404_NOT_FOUND",
 			})
 		} else {
-			// send data
 			c.JSON(200, gin.H{
 				"status": "success",
+				"data":   notes,
+			})
+		}
+	})
+
+	group.GET("/notes/:id", func(c *gin.Context) {
+		id := c.Param("id")
+		note, err := note.GetNoteById(id)
+
+		if err == "404_NOT_FOUND" {
+			c.JSON(404, gin.H{
+				"status":  "error",
+				"message": "404_NOT_FOUND",
+			})
+		} else {
+			c.JSON(200, gin.H{
+				"status": "success",
+				"data":   note,
+			})
+		}
+	})
+
+	group.POST("/notes", func(c *gin.Context) {
+		var noted model.Note
+		c.ShouldBindJSON(&noted)
+
+		fmt.Println(noted)
+		create, err := note.CreateNote(&noted)
+
+		switch err {
+		case "nil":
+			c.JSON(200, gin.H{
+				"status": "success",
+				"data":   create,
+			})
+
+		case "FAILED_TO_CREATE_NOTE":
+			c.JSON(400, gin.H{
+				"status":  "error",
+				"message": "FAILED_TO_CREATE_NOTE",
+			})
+
+		case "TITLE_OR_CONTENT_EMPTY":
+			c.JSON(400, gin.H{
+				"status":  "error",
+				"message": "TITLE_OR_CONTENT_EMPTY",
 			})
 		}
 	})

@@ -6,7 +6,7 @@ import (
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 
-	model "mengkodingkan/notes/src/models"
+	model "mengkodingkan/notes/src/database/models"
 )
 
 func Connection() *gorm.DB {
