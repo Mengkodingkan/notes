@@ -24,12 +24,17 @@ body {
     margin: 100px auto;
     width: 500px;
     padding: 20px;
-    background-color: #0390fc;
+    background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 h3 {
-    color: #fff;
+    font-weight: lighter;
+}
+
+.content h3 {
+    color: #444;
     font-weight: lighter;
     text-align: center;
 }
@@ -44,24 +49,26 @@ form input {
     height: 27px;
     outline: none;
     margin-bottom: 1rem;
-    border:2px solid #0390fc;
-    border-radius: 8px;
+    border:none;
+    /* border-radius: 8px; */
+    border-bottom: 2px solid #0390fc;
     color: #444;
 }
 
 form textarea {
     width: 400px;
     outline: none;
-    border: 2px solid #0390fc;
-    border-radius: 8px;
+    border: none;
+    border-bottom: 2px solid #0390fc;
     color: #444;
 }
 
 label {
     display: block;
-    color: #fff;
+    color: #444;
     text-align: left;
     padding-left: 7%;
+    margin-bottom: 10px;
 }
 
 a {
@@ -70,11 +77,11 @@ a {
 }
 
 .btn-custom1 {
-    background-color: #fff;
-    color: #0390fc;   
+    background-color: #0362fc;
+    color: #fff;   
     width: 70px;
     height: 30px;
-    border: #fff;
+    border: #0362fc;
     border-radius: 8px;
     line-height: 30px;
     text-align: center;
@@ -83,15 +90,15 @@ a {
 }
 
 .btn-custom1:hover {
-    font-size: 15px;
+    background-color: #034afc;
 }
 
 .btn-custom2 {
-    background-color: #fff;
-    color: #e02b3d;
+    background-color: #e02b3d;
+    color: #fff;
     width: 70px;
     height: 30px;
-    border: #fff;
+    border: #e02b3d;
     border-radius: 8px;
     line-height: 30px;
     text-align: center;
@@ -100,7 +107,7 @@ a {
 }
 
 .btn-custom2:hover {
-    font-size: 15px;
+    background-color: #cf2334;
 }
 
 footer {
