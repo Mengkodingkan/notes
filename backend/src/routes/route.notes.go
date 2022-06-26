@@ -1,13 +1,12 @@
 package route
 
 import (
-	"fmt"
-
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 
 	note "mengkodingkan/notes/src/controllers"
 	model "mengkodingkan/notes/src/database/models"
+	middleware "mengkodingkan/notes/src/middleware"
 )
 
 func InitNotesRoutes(db *gorm.DB, route *gin.Engine) {
@@ -18,7 +17,7 @@ func InitNotesRoutes(db *gorm.DB, route *gin.Engine) {
 	/*
 		Group Route
 	*/
-	group := route.Group("/api/v1")
+	group := route.Group("/api/v1").Use(middleware.Auth())
 	group.GET("/notes", func(c *gin.Context) {
 		notes, err := note.GetAllNotes()
 
@@ -54,8 +53,6 @@ func InitNotesRoutes(db *gorm.DB, route *gin.Engine) {
 	group.POST("/notes", func(c *gin.Context) {
 		var noted model.Note
 		c.ShouldBindJSON(&noted)
-
-		fmt.Println(noted)
 		create, err := note.CreateNote(&noted)
 
 		switch err {
@@ -78,4 +75,6 @@ func InitNotesRoutes(db *gorm.DB, route *gin.Engine) {
 			})
 		}
 	})
+
+	group.PUT("/notes/:id", func(c *gin.Context) {})
 }

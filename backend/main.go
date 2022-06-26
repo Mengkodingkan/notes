@@ -24,6 +24,7 @@ func _init() *gin.Engine {
 	db := database.Connection()
 
 	route.InitNotesRoutes(db, r)
+	route.InitAuth(r)
 
 	return r
 }

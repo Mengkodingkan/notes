@@ -1,7 +1,6 @@
 package notes
 
 import (
-	"fmt"
 	model "mengkodingkan/notes/src/database/models"
 	"time"
 
@@ -63,7 +62,6 @@ func (r *repository) GetNoteById(id string) (*model.Note, string) {
 func (r *repository) CreateNote(data *model.Note) (*model.Note, string) {
 	var note model.Note
 
-	fmt.Print(data)
 	if data.Title == "" || data.Content == "" {
 		return &note, "TITLE_OR_CONTENT_EMPTY"
 	}
