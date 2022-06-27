@@ -42,9 +42,9 @@ main {
 
 .set-search {
     width: 250px;
-    height: 27px;  
+    height: 30px;  
     outline: none; 
-    border: 2px solid #0390fc;
+    border: 1px solid #ddd;
     border-radius: 5px;
     color: #444;
 }
@@ -55,7 +55,6 @@ main {
     border: #138f3a;
     height: 30px;
     width: 70px;
-    border-radius: 8px;
     outline: none;
 }
 
@@ -68,7 +67,6 @@ main {
     border: #ebc934;
     height: 30px;
     width: 70px;
-    border-radius: 8px;
     margin-bottom: 2px;
     outline: none;
     color: #444;
@@ -86,7 +84,6 @@ main {
     border: #e02b3d;
     height: 30px;
     width: 70px;
-    border-radius: 8px;
     outline: none;
 
 }
@@ -101,7 +98,6 @@ main {
     border: #0362fc;
     height: 30px;
     width: 70px;
-    border-radius: 8px;
     margin-bottom: 10px;
     line-height: 30px;
     text-align: center;
@@ -142,8 +138,12 @@ th {
     background-color: #f2f2f2;
 }
 
-.table, th, td {
+.table, td {
     padding: 8px 20px;
+}
+
+.table th {
+    padding: 10px 20px;
 }
 
 .table td {
