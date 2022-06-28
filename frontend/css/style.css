@@ -34,8 +34,6 @@ main {
     border-radius: 5px;
 }
 
-
-
 .search {
     text-align: center;
 }
@@ -49,7 +47,7 @@ main {
     color: #444;
 }
 
-.btn-custom1 {
+.fa-magnifying-glass{
     color: #fff;
     background-color: #138f3a;
     border: #138f3a;
@@ -58,8 +56,24 @@ main {
     outline: none;
 }
 
-.btn-custom1:hover {
+.fa-magnifying-glass:hover {
     background-color: #207534;
+}
+
+.fa-edit{
+    text-align: center;
+    margin-bottom: 2px;
+    color: green;
+    height: 10px;
+    width: 70px;
+}
+
+.fa-trash-can{
+    text-align: center;
+    margin-bottom: 2px;
+    color: #e02b3d;
+    height: 30px;
+    width: 70px;
 }
 
 .btn-custom2 {
